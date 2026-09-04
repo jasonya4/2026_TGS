@@ -33,7 +33,7 @@ const itineraryData = [
             { time: "18:00", title: "免費接駁車", desc: "從八幡站搭免費接駁車前往纜車站 (免費)" },
             { time: "18:30", title: "<a href='https://www.google.com/maps/search/?api=1&query=Sarakurayama' target='_blank'>皿倉山百萬夜景</a> 🎟️", desc: "搭乘登山纜車與爬坡車攻頂欣賞新日本三大夜景", note: "【使用樂享周遊券 3/3】(原價來回 ¥1,230)" },
             { time: "20:30", title: "八幡 → 小倉", desc: "搭乘 JR 鹿兒島本線返回小倉站 (¥280)" },
-            { time: "21:00", title: "晚餐：牛腸鍋 (小倉)", desc: "看完夜景後，前往小倉市區的牛腸鍋名店 (如 田しゅう) 大啖熱騰騰的もつ鍋" }
+            { time: "21:00", title: "晚餐：<a href='https://www.google.com/maps/search/?api=1&query=Motsunabe+Kokura' target='_blank'>牛腸鍋 (小倉)</a>", desc: "看完夜景後，前往小倉市區的牛腸鍋名店 (如 田しゅう) 大啖熱騰騰的もつ鍋" }
         ]
     },
     {
@@ -63,7 +63,7 @@ const itineraryData = [
             { time: "全天", title: "海上航行", desc: "享受豪華渡輪設施、大浴場與海景" },
             { time: "20:45", title: "抵達橫須賀", desc: "渡輪抵達橫須賀港碼頭" },
             { time: "21:35", title: "搭車前往川崎", desc: "橫須賀中央站搭乘京急本線直達京急川崎站 (約 ¥320)" },
-            { time: "22:30", title: "入住川崎網咖", desc: "入住 川崎グランカスタマ 或 快活CLUB 川崎店過夜" }
+            { time: "22:30", title: "入住<a href='https://www.google.com/maps/search/?api=1&query=Customa+Cafe+Kawasaki' target='_blank'>川崎網咖</a>", desc: "入住 川崎グランカスタマ 或 快活CLUB 川崎店過夜" }
         ]
     },
     {
@@ -76,6 +76,7 @@ const itineraryData = [
             { time: "16:00", title: "川崎車站周邊購物", desc: "看完劇場後，買藍牙耳機(EarFun/Soundcore/JBL)、Workman半袖T恤、VENEX恢復衣", note: "【採買】Yodobashi / WorkmanGirl / Bic Camera" },
             { time: "18:30", title: "直達錦糸町", desc: "從 JR 川崎站取行李，搭乘 JR 總武線直達錦糸町 (約 ¥480)" },
             { time: "晚上", title: "入住 <a href='https://www.famy-inn.com/' target='_blank'>Famy Inn 錦糸町</a>", desc: "抵達東京總基地辦理入住" },
+            { time: "19:30", title: "晚餐：<a href='https://www.google.com/maps/search/?api=1&query=Negishi+Kinshicho' target='_blank'>ねぎし 錦糸町店</a>", desc: "享用美味的牛舌山藥麥飯套餐" },
             { time: "21:00", title: "樂天地 SPA 與 TAITO", desc: "TAITO STATION 暖身開戶，隨後至天然溫泉樂天地 SPA 泡湯" }
         ]
     },
@@ -119,8 +120,8 @@ const itineraryData = [
         day: "SUN",
         title: "最後採買與完美歸途",
         items: [
-            { time: "10:30", title: "退房與寄放行李", desc: "大行李寄放 Famy Inn 櫃檯，輕裝出門", note: "行李寄放策略：全部丟在飯店大廳最完美" },
-            { time: "11:00", title: "ARCAKIT / OIOI 採買", desc: "最後補貨買 Femcare洗劑、Pelican肥皂、MAPUTI慕斯、阿魯露斯糖漿等雜貨" },
+            { time: "10:30", title: "退房與寄放行李", desc: "大行李寄放 <a href='https://www.famy-inn.com/' target='_blank'>Famy Inn</a> 櫃檯，輕裝出門", note: "行李寄放策略：全部丟在飯店大廳最完美" },
+            { time: "11:00", title: "<a href='https://www.google.com/maps/search/?api=1&query=ARCAKIT+Kinshicho' target='_blank'>ARCAKIT</a> / <a href='https://www.google.com/maps/search/?api=1&query=Marui+Kinshicho' target='_blank'>OIOI</a> 採買", desc: "最後補貨買 Femcare洗劑、Pelican肥皂、MAPUTI慕斯、阿魯露斯糖漿等雜貨" },
             { time: "14:00", title: "悠閒午餐", desc: "錦糸町享用午餐並回飯店完成最後打包" },
             { time: "13:00 / 16:00", title: "機場巴士 (方案一)", desc: "錦糸町站北口搭乘 Skytree Shuttle，免搬行李。<br>選項①: 13:00 發車 (14:03 抵達) 提早去機場逛街<br>選項②: 16:00 發車 (17:03 抵達) 時間最剛好", note: "【無腦直達】" },
             { time: "16:15 / 16:45", title: "JR快速列車 (方案二)", desc: "第 4 月台搭乘 JR 總武快速線。<br>選項①: 16:15 發車 (17:35 抵達) 距離開櫃剩40分<br>選項②: 16:45 發車 (18:05 抵達) 完美無縫接軌", note: "【精準抵達】" },
