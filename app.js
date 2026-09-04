@@ -75,7 +75,7 @@ const itineraryData = [
             { time: "12:00", title: "<a href='https://www.google.com/maps/search/?api=1&query=Kawasaki+Rockza' target='_blank'>川崎ロック座</a>", desc: "觀賞頂級 Kawasaki Rockza 劇場演出" },
             { time: "16:00", title: "川崎車站周邊購物", desc: "看完劇場後，買藍牙耳機(EarFun/Soundcore/JBL)、Workman半袖T恤、VENEX恢復衣", note: "【採買】Yodobashi / WorkmanGirl / Bic Camera" },
             { time: "18:30", title: "直達錦糸町", desc: "從 JR 川崎站取行李，搭乘 JR 總武線直達錦糸町 (約 ¥480)" },
-            { time: "晚上", title: "入住 Famy Inn 錦糸町", desc: "抵達東京總基地辦理入住" },
+            { time: "晚上", title: "入住 <a href='https://www.famy-inn.com/' target='_blank'>Famy Inn 錦糸町</a>", desc: "抵達東京總基地辦理入住" },
             { time: "21:00", title: "樂天地 SPA 與 TAITO", desc: "TAITO STATION 暖身開戶，隨後至天然溫泉樂天地 SPA 泡湯" }
         ]
     },
