@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>2026 TGS 詳細行程表 (A4 列印專用)</title>
+<style>
+    @page { size: A4 portrait; margin: 8mm; }
+    body { font-family: 'Helvetica Neue', Arial, '微軟正黑體', sans-serif; font-size: 10px; line-height: 1.25; margin: 0; padding: 0; color: #000; }
+    h1 { font-size: 16px; text-align: center; margin: 0 0 10px 0; border-bottom: 2px solid #000; padding-bottom: 5px; }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+    .day-card {
+        border: 1px solid #333;
+        padding: 4px;
+        border-radius: 4px;
+        break-inside: avoid;
+    }
+    .day-title {
+        font-size: 12px;
+        font-weight: bold;
+        background-color: #f0f0f0;
+        padding: 3px;
+        margin: -4px -4px 4px -4px;
+        border-bottom: 1px solid #333;
+        text-align: center;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .item { margin-bottom: 4px; padding-bottom: 4px; border-bottom: 1px dotted #ccc; }
+    .item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .time { font-weight: bold; color: #000; display: inline-block; width: 35px; vertical-align: top; }
+    .content { display: inline-block; width: calc(100% - 40px); }
+    .title { font-weight: bold; color: #000; display: block; font-size: 10px;}
+    .desc { display: block; color: #333; margin-top: 1px; font-size: 9px; }
+    .note { display: block; color: #d9534f; font-size: 8px; font-weight: bold; margin-top: 1px; }
+    a { color: inherit; text-decoration: none; }
+    .footer { text-align: center; font-size: 9px; margin-top: 10px; color: #666; }
+</style>
+</head>
+<body>
+    <h1>✈️ 2026 TGS 縱貫日本：詳細行程表 (A4版)</h1>
+    <div class="grid-container" id="print-container"></div>
+    <div class="footer">列印建議：請設定為 A4 直式、邊界「最小」或「自訂」、並開啟「背景圖形」。APP 網址: https://jasonya4.github.io/2026_TGS/</div>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('print-container');
+            itineraryData.forEach(day => {
+                let html = `<div class="day-card">
+                    <div class="day-title">${day.date} (${day.day}) ${day.title}</div>`;
+                
+                day.items.forEach(item => {
+                    let cleanTitle = item.title.replace(/<\/?[^>]+(>|$)/g, ""); 
+                    html += `
+                        <div class="item">
+                            <span class="time">${item.time}</span>
+                            <div class="content">
+                                <span class="title">${cleanTitle}</span>
+                                <span class="desc">${item.desc}</span>
+                                ${item.note ? `<span class="note">${item.note}</span>` : ''}
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                html += `</div>`;
+                container.innerHTML += html;
+            });
+        });
+    </script>
+</body>
+</html>
