@@ -5,7 +5,9 @@ const itineraryData = [
         day: "SAT",
         title: "福岡抵達與小倉夜生活",
         items: [
-            { time: "15:20", title: "<a href='https://www.google.com/maps/search/?api=1&query=Fukuoka+Airport' target='_blank'>抵達福岡機場</a>", desc: "搭乘 AK1510 抵達福岡機場 (FUK)" },
+            { time: "09:30", title: "<a href='https://www.google.com/maps/search/?api=1&query=Taoyuan+Airport+Terminal+1' target='_blank'>抵達桃園機場 T1</a>", desc: "前往亞洲航空 (AirAsia) 櫃台報到<br><b>訂位代號: WHRSSN, M6SB3Z</b>", note: "【航班 AK1510】" },
+            { time: "12:00", title: "班機起飛", desc: "搭乘 AK1510 (A320-212) 飛往福岡" },
+            { time: "15:20", title: "<a href='https://www.google.com/maps/search/?api=1&query=Fukuoka+Airport' target='_blank'>抵達福岡機場 (FUK)</a>", desc: "入境日本，抵達福岡國際航廈 (I)" },
             { time: "16:30", title: "前往<a href='https://www.google.com/maps/search/?api=1&query=Kokura+Station' target='_blank'>小倉</a>", desc: "搭乘地下鐵至博多站，轉乘新幹線前往小倉 (使用「山陽新幹線單程車票」約 ¥1,600 + 地鐵 ¥260)" },
             { time: "17:30", title: "購買<a href='https://www.google.com/maps/search/?api=1&query=%E4%BC%8A%E9%83%BD%E3%81%8D%E3%82%93%E3%81%90+%E5%B0%8F%E5%80%89%E9%A7%85%E5%BA%97' target='_blank'>伊都 KING</a>", desc: "抵達小倉站時，先不出新幹線改札口，在站內買「甘王草莓銅鑼燒」" },
             { time: "18:00", title: "入住<a href='https://www.google.com/maps/search/?api=1&query=Tabist+Hotel+Tetora+Kitakyushu' target='_blank'>Tabist泰托拉北九州</a>", desc: "抵達小倉站，辦理入住 (Tabist Hotel Tetora Kitakyushu) 並放置行李" },
@@ -125,8 +127,8 @@ const itineraryData = [
             { time: "14:00", title: "悠閒午餐", desc: "錦糸町享用午餐並回飯店完成最後打包" },
             { time: "13:00 / 16:00", title: "機場巴士 (方案一)", desc: "錦糸町站北口搭乘 Skytree Shuttle，免搬行李。<br>選項①: 13:00 發車 (14:03 抵達) 提早去機場逛街<br>選項②: 16:00 發車 (17:03 抵達) 時間最剛好", note: "【無腦直達】" },
             { time: "16:15 / 16:45", title: "JR快速列車 (方案二)", desc: "第 4 月台搭乘 JR 總武快速線。<br>選項①: 16:15 發車 (17:35 抵達) 距離開櫃剩40分<br>選項②: 16:45 發車 (18:05 抵達) 完美無縫接軌", note: "【精準抵達】" },
-            { time: "18:15", title: "虎航報到", desc: "第二航廈 3F 櫃台開櫃辦理託運 (20:00死線關櫃)" },
-            { time: "20:45", title: "班機起飛 (IT701)", desc: "滿載而歸，結束縱貫日本大冒險！" }
+            { time: "18:15", title: "虎航報到", desc: "第二航廈 3F 櫃台開櫃辦理託運 (20:00死線關櫃)<br><b>訂位代號: WHRSSN, M6SB3Z</b>" },
+            { time: "20:45", title: "班機起飛 (IT701)", desc: "滿載而歸，結束縱貫日本大冒險！<br>*(預計 23:25 抵達桃園 T1)*" }
         ]
     }
 ];
